@@ -7,7 +7,7 @@ ________________________________________________________________________________
 
 🚀 Features
 - **Automatic Sorting** – Separates waste into three categories using a roller mechanism.
-- **Sensor Integration** – Detects material type for accurate segregation.
+- **AI Integration** – Detects material type for accurate segregation.
 - **Eco-Friendly Design** – Reduces human handling of waste.
 - **Scalable** – Suitable for households, schools, and community waste centers.
 
