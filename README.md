@@ -20,11 +20,11 @@ The model predicts the classes listed in `labels.txt`:
 
 | Class | Examples |
 |-------|----------|
-| `[Glass]` | `[glass jar]` |
-| `[Metal]` | `[Tin]` |
-| `[Organic]` | `[vegetables]` |
-| `[Paper]` | `[newspaper]` |
-| `[Plastic]` | `[plastic bottle]` |
+| `Glass` | `glass jar` |
+| `Metal` | `Tin` |
+| `Organic` | `vegetables` |
+| `Paper` | `newspaper` |
+| `Plastic` | `plastic bottle` |
 
 ## Project structure
 
@@ -83,10 +83,9 @@ python tflite_infer.py
 
 | Metric | Value |
 |--------|-------|
-| Test accuracy | `[FILL: %]` |
-| Number of classes | `[FILL]` |
-| Training images | `[FILL]` |
-| Test images | `[FILL]` |
+| Test accuracy | `94 %` |
+| Number of classes | `5` |
+| Training images | `500` |
 
 
 ## Limitations
