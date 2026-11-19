@@ -1,8 +1,6 @@
 # Waste Classification
 
-A machine learning model that detects the type of a piece of waste, so it can be sorted into the right category: **biodegradable**, **recyclable** or **non-recyclable**.
-
-> Replace the three categories above with the exact classes listed in `labels.txt` if they differ.
+A machine learning model that detects the type of a piece of waste, so it can be sorted into the right category: **glass**, **metal**,**organic**,**paper** or **plastic**.
 
 This repository contains the full pipeline: training script, saved model, a lightweight TensorFlow Lite version for fast inference, and scripts to run predictions. Automated physical sorting (sensors, a roller and bins) is planned as future work and is **not** part of this version.
 
