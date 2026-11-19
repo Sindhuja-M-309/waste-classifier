@@ -2,7 +2,7 @@
 
 A machine learning model that detects the type of a piece of waste, so it can be sorted into the right category: **glass**, **metal**,**organic**,**paper** or **plastic**.
 
-This repository contains the full pipeline: training script, saved model, a lightweight TensorFlow Lite version for fast inference, and scripts to run predictions. Automated physical sorting (sensors, a roller and bins) is planned as future work and is **not** part of this version.
+This repository contains the full pipeline: training script, saved model, a lightweight TensorFlow Lite version for fast inference, and scripts to run predictions. Automated physical sorting (sensors, a roller and bins) is planned as future work and is not part of this version.
 
 ## Why this project
 
@@ -85,7 +85,7 @@ python tflite_infer.py
 |--------|-------|
 | Test accuracy | `94 %` |
 | Number of classes | `5` |
-| Training images | `500` |
+| Training images per Class | `1000` |
 
 
 ## Limitations
