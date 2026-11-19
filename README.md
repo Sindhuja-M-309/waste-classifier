@@ -10,7 +10,7 @@ Mixed waste is hard to recycle and ends up in landfills. A reliable way to ident
 
 ## What it does
 
-1. Loads an image of a waste item. `[FILL: or a live camera frame, whichever detect_waste.py uses]`
+1. Loads an image of a waste item. `[ a live camera frame, whichever detect_waste.py uses]`
 2. Runs it through the trained model.
 3. Prints the predicted category with its confidence score.
 
@@ -20,9 +20,11 @@ The model predicts the classes listed in `labels.txt`:
 
 | Class | Examples |
 |-------|----------|
-| `[FILL: class 1]` | `[FILL]` |
-| `[FILL: class 2]` | `[FILL]` |
-| `[FILL: class 3]` | `[FILL]` |
+| `[Glass]` | `[glass jar]` |
+| `[Metal]` | `[Tin]` |
+| `[Organic]` | `[vegetables]` |
+| `[Paper]` | `[newspaper]` |
+| `[Plastic]` | `[plastic bottle]` |
 
 ## Project structure
 
@@ -33,20 +35,20 @@ The model predicts the classes listed in `labels.txt`:
 | `waste_model.keras` | Trained Keras model |
 | `tflite_model.tflite` | TensorFlow Lite version of the model for lightweight inference |
 | `tflite_infer.py` | Runs predictions with the TensorFlow Lite model |
-| `detect_waste.py` | `[FILL: one line, e.g. runs detection on an image or webcam feed]` |
-| `labels.txt` | Class names, one per line |
+| `detect_waste.py` | runs detection on an image or webcam feed |
+| `labels.txt` | Glass,Metal,Organic,Paper,Plastic |
 
 ## Tech stack
 
 - Python
-- TensorFlow / Keras and TensorFlow Lite `[confirm against the imports in your scripts]`
-- `[FILL: any other libraries, e.g. NumPy, OpenCV, Pillow]`
+- TensorFlow / Keras and TensorFlow Lite
+- Numpy
 
 ## Getting started
 
 ### Prerequisites
 
-- Python 3.9 or later `[FILL: the version you used]`
+- Python 3.11 or later 
 - pip
 
 ### Setup
@@ -54,10 +56,7 @@ The model predicts the classes listed in `labels.txt`:
 ```
 git clone https://github.com/Sindhuja-M-309/waste-classifier.git
 cd waste-classifier
-pip install -r requirements.txt
 ```
-
-> Create `requirements.txt` by listing the libraries imported at the top of your scripts, or run `pip freeze > requirements.txt` in your working environment.
 
 ### Train the model
 
@@ -79,7 +78,6 @@ For the lightweight TensorFlow Lite model:
 python tflite_infer.py
 ```
 
-> Add the exact arguments each script expects, for example an image path.
 
 ## Results
 
@@ -90,11 +88,6 @@ python tflite_infer.py
 | Training images | `[FILL]` |
 | Test images | `[FILL]` |
 
-Add a screenshot or short GIF of a prediction here, for example `![Demo](demo.gif)`.
-
-## Dataset
-
-`[FILL: source of the images, such as a public dataset with its link, or images you collected yourself, plus how you split train and test data.]`
 
 ## Limitations
 
